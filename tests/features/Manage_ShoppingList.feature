@@ -4,8 +4,7 @@ Feature: Manage Shopping Lists
     So that I can be on top of my shopping
 
     Scenario: Create a shopping list
-        Given the application is active
-        And I am on the HomePage
+        Given I am on the HomePage
         When I select 'Create a new Shoppinglist'
         And Submit with 'My Shopping List'
         Then I am Shown the pre-populated 'My Shopping List' page
