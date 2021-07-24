@@ -12,3 +12,6 @@ Reasoning:
 
 3. To implement the most valubale flow first and include as many functions in the E2E test.
 
+Due to the state of the application to be tested and my phobia of usignxpaths in testing. even after deploying the docker container to Heroku.
+
+I changed tack and used cypress to test the application.  
