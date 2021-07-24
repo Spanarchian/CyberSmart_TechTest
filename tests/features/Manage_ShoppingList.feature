@@ -16,3 +16,17 @@ Feature: Manage Shopping Lists
         And I confirm I want to Delete
         Then I am returned to the home page
         And the 'List' is no longer visible
+
+    Scenario: Add a new Item to the List
+        Given I am on the 'My Shopping List' page
+        When I type 'Chilli powder' in the textbox
+        And press the ADD button
+        Then I see 'Chilli powder' added to the bottom of the list
+
+    Scenario: Remove an Item from the list
+        Given I am on the 'My Shopping List' page
+        When I select the x button in the 'Chilli powder' item
+        Then I see 'Chilli powder' has been removed from the list
+
+
+
