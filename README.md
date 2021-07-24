@@ -14,4 +14,13 @@ Reasoning:
 
 Due to the state of the application to be tested and my phobia of usignxpaths in testing. even after deploying the docker container to Heroku.
 
-I changed tack and used cypress to test the application.  
+I changed tack and used cypress to test the application.
+
+To execute the tests: 
+    Clone or download the repository  Zip and extract
+    cd /cypress
+    sh ./run_test.sh
+
+
+The failing test is due to the current restriction (to the best of my knowledge) 
+cypress cannot use incognito mode on chrome to allow it to appear as another user.
